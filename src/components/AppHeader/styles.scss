@@ -1,0 +1,38 @@
+.logo {
+    width: 73px;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.items-menu {
+    display: flex;
+    gap: 66px;
+    font-weight: themeFontWeight(medium);
+}
+
+a {
+    color: themeColor(description);
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+.navbar-toggler {
+    background-color: transparent;
+    border: none;
+}
