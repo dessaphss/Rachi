@@ -1,5 +1,7 @@
 :root {
-    
+  --text-title: #293145;
+  --text-description: #6E7275;
+  --text-button: #FFF;
 }
 
 @import "./theme";
@@ -10,6 +12,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: $font-family-inter;
+  font-size: themeFontSize(medium);
+}
+
 a {
-    text-decoration: none;
+    text-decoration: none; 
+}
+
+ul {
+  list-style: none;
 }

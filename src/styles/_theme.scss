@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600&display=swap');
+
+$font-family-inter: "Inter", sans-serif;
+$font-family-sora: "Sora", sans-serif;
+
+$colors: (
+    title: var(--text-title),
+    description: var(--text-description),
+    button: var(--text-button),
+    btn-primary: #0F9AFE,
+    bg-primary: #EFF8FF,
+);
+
+$font-weights: (
+  regular: 400,
+  semiBold: 600,
+  medium: 500,
+);
+
+$font-sizes: (
+  xsmall: 1.125rem,
+  small: 0.813rem,
+  medium: 1rem,
+  large: 1.25rem,
+  xlarge: 1.5rem,
+  xxlarge: 2rem,
+  xxxlarge: 2.5rem,
+  huge: 3rem
+);
+
+@function themeFontSize($key) {
+    @if map-has-key($font-sizes, $key) {
+      @return map-get($font-sizes, $key);
+    }
+
+    @warn "Unkown '#{$key}' in $font-sizes.";
+    @return null;
+}
+
+@function themeColor($key) {
+    @if map-has-key($colors, $key) {
+      @return map-get($colors, $key);
+    }
+    @return null;
+}
+
+@function themeFontWeight($key) {
+    @if map-has-key($font-weights, $key) {
+      @return map-get($font-weights, $key)
+    }
+
+    @warn "Unkown '#{$key}' in $font-weights.";
+    @return null;
+}
