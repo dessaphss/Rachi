@@ -1,17 +1,16 @@
-.logo {
-    width: 73px;
-    height: 20px;
-}
-
 .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    & .logo {
+        width: 4.56rem;
+        height: 1.25rem;
+    }
 }
 
 .items-menu {
     display: flex;
-    gap: 66px;
+    gap: themeSpacings(large);
     font-weight: themeFontWeight(medium);
 }
 
@@ -36,3 +35,5 @@ a {
     background-color: transparent;
     border: none;
 }
+
+
