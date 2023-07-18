@@ -28,6 +28,17 @@ $font-sizes: (
   huge: 3rem
 );
 
+$spacings: (
+  xxxsmall: 0.8rem,
+  xxsmall: 1.2rem,
+  xsmall: 1.6rem,
+  small: 2.5rem,
+  medium: 3.12rem,
+  large: 4.12rem,
+  xlarge: 4.8rem,
+  xxlarge: 5.6rem,
+);
+
 @function themeFontSize($key) {
     @if map-has-key($font-sizes, $key) {
       @return map-get($font-sizes, $key);
@@ -51,4 +62,13 @@ $font-sizes: (
 
     @warn "Unkown '#{$key}' in $font-weights.";
     @return null;
+}
+
+@function themeSpacings($key) {
+  @if map-has-key($spacings, $key) {
+    @return map-get($spacings, $key);
+  }
+
+  @warn "Unkown '#{$key}' in $spacings.";
+  @return null;
 }
