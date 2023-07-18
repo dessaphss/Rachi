@@ -1,0 +1,11 @@
+.sub-title {
+  color: themeColor(title);
+  text-align: center;
+  font-family: ($font-family-sora);
+  font-size: themeFontSize(xxxlarge);
+  font-style: normal;
+  font-weight: themeFontWeight(semiBold);
+  line-height: normal;
+  padding-top: themeSpacings(medium);
+}
+

@@ -1,0 +1,17 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: themeSpacings(xxsmall);
+  margin-top: themeSpacings(small);
+  flex-wrap: wrap;
+  & h3 {
+    padding-bottom: themeSpacings(xxxsmall);
+  }
+}
+
+.card-image {
+  margin-bottom: themeSpacings(xxsmall);
+}
+
