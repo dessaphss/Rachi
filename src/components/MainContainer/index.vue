@@ -8,18 +8,55 @@
               <img src="@/assets/icons/working.svg" alt="">
             </div>
           </div>
-          <button class="btn-signup">Cadastrar-se</button>
+          <custom-button
+            button-size="normal"
+            buttonText="Cadastra-se"
+          />
         </div>
-        <h2 class="sub-title">Como funciona</h2>
+        <custom-title title-text="Como funciona" />
+        <div class="card-container">
+          <CardItem 
+            v-for="(card, index) in cards"
+            :key="index"
+            :card="card"
+          />
+        </div>
     </div>
 </template>
 <script>
 import AppHeader from "@/components/AppHeader";
+import CustomButton from "@/components/CustomButton";
+import CustomTitle from "@/components/CustomTitle";
+import CardItem from "@/components/CardItem"
 
 export default {
   name: 'MainContainer',
+  data () {
+    return {
+      cards: [
+        {
+          title: "Crie conexões",
+          description: "Lorem ipsum dolor sit amet, consecteteu.",
+          image: require("@/assets/icons/connections.svg")
+        },
+        {
+          title: "100% gratuito",
+          description: "Lorem ipsum dolor sit amet, consecteteu.",
+          image: require("@/assets/icons/security.svg")
+        },
+        {
+          title: "Compartilhamento",
+          description: "Lorem ipsum dolor sit amet, consecteteu.",
+          image: require("@/assets/icons/happy.svg")
+        }
+      ]
+    }
+  },
   components: {
-    AppHeader
+    AppHeader,
+    CustomButton,
+    CustomTitle,
+    CardItem
   }
 };
 </script>

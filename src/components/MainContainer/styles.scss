@@ -4,27 +4,25 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 1.25rem;
-}
-
-
-.container-bg {
-  margin-top: 20px;
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -9999px;
-    right: -9999px;
-    height: 100%;
-    background: themeColor(bg-primary);
+  & .container-bg {
+    margin-top: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -9999px;
+      right: -9999px;
+      height: 100%;
+      background: themeColor(bg-primary);
+    }
   }
 }
 
 .title {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 12.5rem;
   color: themeColor(title);
   font-family: ($font-family-sora);
   font-size: 1.2rem;
@@ -33,26 +31,7 @@
   z-index: 1;
 }
 
-.btn-signup{
-  padding: 1rem 2.25rem;
-  border: none;
-  border-radius: 3.125rem;
-  background: themeColor(btn-primary);
-  box-shadow: 1px 3px 4px 0px rgba(19, 125, 224, 0.50);
-  color: themeColor(button);
-  font-size: themeFontSize(large);
-  font-weight: themeFontWeight(semiBold);
-  position: relative;
-  top: -130px;
-}
-
-.sub-title {
-  color: #293145;
-  text-align: center;
-  font-family: Sora;
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding-top: 3.12rem;
+.card-container{
+  display: flex;
+  justify-content: center;
 }
