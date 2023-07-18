@@ -5,7 +5,10 @@
             <nav class="navbar">
                 <div class="desktop-menu">
                     <ul class="items-menu">
-                        <li v-for="item in menuItems" :key="item.id">
+                        <li
+                            v-for="item in menuItems"
+                            :key="item.id"
+                        >
                             <a :href="item.url">
                                 {{ item.name }}
                             </a>
@@ -18,7 +21,10 @@
                     </button>
                     <div class="navbar-collapse" :class="{'show': isMenuOpen}">
                         <ul v-if="isMenuOpen">
-                            <li v-for="item in menuItems" :key="item.id">
+                            <li
+                                v-for="item in menuItems"
+                                :key="item.id"
+                            >
                                 <a :href="item.url">
                                     {{ item.name }}
                                 </a>
