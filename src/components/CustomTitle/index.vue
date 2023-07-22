@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h2 class="sub-title">{{ titleText }}</h2>
+  <div class="custom-title">
+    <h2 class="title-text">{{ titleText }}</h2>
+    <p>{{ subTitle }}</p>
     <slot></slot>
   </div>
 </template>
@@ -11,6 +12,9 @@ export default {
     titleText: {
       type: String,
       required: true
+    },
+    subTitle: {
+      type: String
     }
   }
 }
