@@ -8,7 +8,7 @@
     </div>
     <div class="card-content">
       <h3>{{ card.title }}</h3>
-      <p> {{ card.description }}</p>
+      <p class="subtitle"> {{ card.description }}</p>
     </div>
   </div>
 </template>

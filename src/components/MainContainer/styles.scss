@@ -1,25 +1,8 @@
-.main-app-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.25rem;
-  & .container-bg {
-    margin-top: 20px;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -9999px;
-      right: -9999px;
-      height: 100%;
-      background: themeColor(bg-primary);
-    }
-  }
+.max-full {
+  background: themeColor(bg-primary);
 }
 
-.title {
+.bg-style {
   display: flex;
   align-items: center;
   gap: 12.5rem;
@@ -27,11 +10,37 @@
   font-family: ($font-family-sora);
   font-size: 1.2rem;
   font-weight: themeFontWeight(semiBold);
-  position: relative;
-  z-index: 1;
 }
 
-.card-container{
+.card-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 8.5rem;
+  margin-top: 109px;
+}
+
+.app-description {
+  & h4 {
+    color: themeColor(title);
+    font-family: ($font-family-sora);
+    font-size: themeFontSize(xlarge);
+    font-weight: themeFontWeight(semiBold);
+    padding-bottom: themeSpacings(xsmall);
+  }
+  & p {
+    font-family: ($font-family-inter);
+    font-weight: 400;
+    line-height: 26px;
+    width: 444px;
+  }
+  & .store {
+    margin-top: themeSpacings(xsmall);
+  }
 }

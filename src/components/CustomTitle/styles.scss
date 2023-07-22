@@ -1,11 +1,18 @@
-.sub-title {
+.custom-title {
+
+}
+
+.title-text {
   color: themeColor(title);
   text-align: center;
   font-family: ($font-family-sora);
-  font-size: themeFontSize(xxxlarge);
+  font-size: themeFontSize(xxlarge);
   font-style: normal;
   font-weight: themeFontWeight(semiBold);
   line-height: normal;
-  padding-top: themeSpacings(medium);
+  margin-top: 109px;
 }
 
+.sub-title {
+  text-align: center;
+}

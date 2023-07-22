@@ -22,8 +22,8 @@ $font-sizes: (
   small: 0.813rem,
   medium: 1rem,
   large: 1.25rem,
-  xlarge: 1.5rem,
-  xxlarge: 2rem,
+  xlarge: 1.8rem,
+  xxlarge: 2.2rem,
   xxxlarge: 2.5rem,
   huge: 3rem
 );
@@ -36,7 +36,7 @@ $spacings: (
   medium: 3.12rem,
   large: 4.12rem,
   xlarge: 4.8rem,
-  xxlarge: 5.6rem,
+  xxlarge: 6.81rem,
 );
 
 @function themeFontSize($key) {
